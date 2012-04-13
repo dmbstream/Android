@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/concert_list_header_title"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:text="Concerts" />
+
+	    <LinearLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/concertList"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" />
+	    <TextView
+	        android:id="@+id/AddMoreConcerts"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="6dip"
+	        android:gravity="center_vertical"
+	        android:text="@string/msg_load_more_concerts"
+	        android:textAppearance="@style/NewsItemTitle"
+	        android:textStyle="italic" />
+	    
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/playlist_list_header_title"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="2dip"
+            android:text="Playlists" />
+	    <TextView
+	        android:id="@+id/AddMorePlaylists"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="6dip"
+	        android:gravity="center_vertical"
+	        android:text="@string/msg_load_more_playlists"
+	        android:textAppearance="@style/NewsItemTitle"
+	        android:textStyle="italic" />
+        
+	    <LinearLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/playlistList"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" />
+	    
+    </LinearLayout>
+
+</ScrollView>

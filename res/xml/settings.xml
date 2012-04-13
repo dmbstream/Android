@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings.title" >
+
+    <PreferenceCategory android:title="@string/settings.network_title" >
+        <ListPreference
+            android:defaultValue="high"
+            android:entries="@array/songQualityNames"
+            android:entryValues="@array/songQualityValues"
+            android:key="songQualityWifi"
+            android:title="@string/settings.song_quality_wifi" />
+        <ListPreference
+            android:defaultValue="low"
+            android:entries="@array/songQualityNames"
+            android:entryValues="@array/songQualityValues"
+            android:key="songQualityMobile"
+            android:title="@string/settings.song_quality_mobile" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wifiRequiredForDownload"
+            android:summary="@string/settings.wifi_required_summary"
+            android:title="@string/settings.wifi_required_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings.cache_title" >
+        <ListPreference
+            android:defaultValue="500"
+            android:entries="@array/cacheSizeNames"
+            android:entryValues="@array/cacheSizeValues"
+            android:key="cacheSize"
+            android:title="@string/settings.cache_size" />
+
+        <EditTextPreference
+            android:key="cacheLocation"
+            android:title="@string/settings.cache_location" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/preloadCountNames"
+            android:entryValues="@array/preloadCountValues"
+            android:key="preloadCount"
+            android:title="@string/settings.preload" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings.other_title" >
+
+		<CheckBoxPreference
+        	android:title="@string/settings.scrobble_title"
+			android:summary="@string/settings.scrobble_summary"
+			android:key="scrobble"
+			android:defaultValue="true"/>        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="mediaButtons"
+            android:summary="@string/settings.media_button_summary"
+            android:title="@string/settings.media_button_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="screenLitOnDownload"
+            android:summary="@string/settings.screen_lit_summary"
+            android:title="@string/settings.screen_lit_title" />
+
+        <!--
+             <Preference
+                android:key="clearSearchHistory"
+                android:title="@string/settings.clear_search_history"
+                android:persistent="false"/>
+        -->
+    </PreferenceCategory>
+
+</PreferenceScreen>

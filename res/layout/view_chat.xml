@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	    
+    <LinearLayout
+		android:id="@+id/stickyMessageHolder"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+		style="@style/stickyMessageHolder"
+    >
+	    <TextView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:padding="5dip"
+			android:id="@+id/stickyMessage"
+	    />
+	</LinearLayout>	    
+    <ScrollView 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/scroller"
+    	android:layout_weight="1"
+    >
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/chatMessagesTable"
+	    	android:stretchColumns="0"
+	    	android:shrinkColumns="0">
+	    </TableLayout>
+    </ScrollView>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    >
+		<TableRow>
+		    <EditText
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:lines="1"
+		    	android:singleLine="true"
+		    	android:inputType="textCapSentences"
+		    	android:id="@+id/message" />
+		    <Button
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:text="Send"
+		    	android:id="@+id/sendMessageButton" />
+		    	
+		</TableRow>    
+    </TableLayout>
+
+</LinearLayout>

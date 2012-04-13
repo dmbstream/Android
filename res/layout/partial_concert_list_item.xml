@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="4dip" >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical"
+	    android:layout_marginRight="6dp">
+	
+	    <TextView
+	        android:id="@+id/ConcertItemArtist"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:gravity="center_vertical|right"
+	        android:textAppearance="@style/NewsItemTopicText" />
+		<TextView
+	        android:id="@+id/ConcertItemDate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:gravity="center_vertical|right"
+	        android:textAppearance="@style/NewsItemTopicText" />
+	</LinearLayout>
+    <TextView
+        android:id="@+id/ConcertItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/NewsItemTitle" />
+    
+</LinearLayout>

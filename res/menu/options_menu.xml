@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+          android:icon="@drawable/menu_home"
+          android:title="@string/menu.home" />
+    <item android:id="@+id/menu_chat"
+          android:icon="@drawable/menu_chat"
+          android:title="@string/menu.chat" />
+    <item android:id="@+id/menu_random"
+          android:icon="@drawable/menu_random"
+          android:title="@string/menu.random" />
+    <item android:id="@+id/menu_donate"
+          android:icon="@drawable/menu_donate"
+          android:title="@string/menu.donate" />
+    <item android:id="@+id/menu_settings"
+          android:icon="@drawable/menu_settings"
+          android:title="@string/menu.settings" />
+    <item android:id="@+id/menu_logout"
+          android:icon="@drawable/menu_logout"
+          android:title="@string/menu.logout" />
+</menu>

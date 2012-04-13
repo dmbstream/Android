@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:allowSingleTap="false"
+        android:content="@+id/playlist_content"
+        android:handle="@+id/handle"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/contracted_player_bg" >
+
+            <include layout="@layout/partial_player_contracted" />
+
+            <include layout="@layout/partial_player_expanded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/playlist_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:background="@color/white">
+
+		    <TextView
+	            android:id="@+id/download_empty"
+	            android:text="@string/download.empty"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dip"/>
+            
+            <com.dmbstream.android.widget.DragNDropListView
+                android:id="@+id/playlist"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="50dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/app_title_background"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <Button
+                    android:id="@+id/clear_playlist"
+                    style="@style/actionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playlist.clear" />
+            </LinearLayout>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</FrameLayout>

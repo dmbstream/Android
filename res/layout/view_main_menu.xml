@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent"
+  android:background="@color/white">    
+        
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:padding="10dip"
+		android:paddingRight="20dip">
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content"
+	    	android:stretchColumns="0">
+			<TableRow
+				android:id="@+id/chatRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="Chat"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/latestAddedConcertsRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="@string/msg_latest_added_concerts_title"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/latestPerformedConcertsRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="@string/msg_latest_performed_concerts_title"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/searchRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="Search"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/randomRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="Random Concert"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/yourFavoritesRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="@string/msg_your_favorites_title"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+			<TableRow
+				android:id="@+id/yourPlaylistsRow"
+				style="@style/tr_withborder"
+				android:focusableInTouchMode="false"
+			>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="20dip"
+					android:text="@string/msg_your_playlists_title"
+				/>
+				<ImageView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="10dip"
+					android:layout_gravity="right|center_vertical"
+					android:src="@drawable/btn_right" />		
+				
+			</TableRow>
+	    </TableLayout>
+    
+	</LinearLayout>
+	
+</ScrollView>

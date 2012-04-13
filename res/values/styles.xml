@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="MyTheme" parent="android:Theme.Light.NoTitleBar">
+		<item name="android:windowBackground">@color/white</item>
+		<item name="android:colorBackground">@color/white</item>
+		<item name="android:panelColorBackground">@color/white</item>
+		<item name="android:listViewStyle">@style/MyListView</item>
+		<item name="android:textAppearanceLarge">
+			?android:attr/textAppearanceMedium
+    </item>
+	</style>
+
+	<style name="MyListView" parent="android:Widget.ListView.White">
+		<!--<item name="android:cacheColorHint">#fff2f2f2</item> -->
+		<item name="android:divider">@drawable/divider</item>
+		<item name="android:dividerHeight">2dp</item>
+		<item name="android:listPreferredItemHeight">15dp</item>
+		<item name="android:listSelector">@drawable/list_selector_background</item>
+	</style>
+
+	<style name="Banner">
+		<item name="android:background">@color/black</item>
+		<item name="android:textAppearance">@style/BannerText</item>
+	</style>
+	<style name="ViewTitle">
+		<item name="android:background">@drawable/title_background</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_height">24dip</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:paddingLeft">8dip</item>
+		<item name="android:paddingRight">8dip</item>
+		<item name="android:paddingTop">1dip</item>
+		<item name="android:paddingBottom">1dip</item>
+	</style>
+	<style name="ViewTitleText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:singleLine">true</item>
+	</style>
+	<style name="ViewTitleSubText" parent="@style/ViewTitleText">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="NewsItemTitle" parent="@android:style/TextAppearance">
+		<item name="android:textSize">13sp</item>
+		<item name="android:typeface">serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	<style name="NewsItemTopicText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">10.5sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#737373</item>
+	</style>
+	<style name="PlayerStatusText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">10sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#f5f5f5</item>
+	</style>
+	<style name="PlayerText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">13sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#f5f5f5</item>
+	</style>
+	<style name="PlaylistItemTitle" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#333</item>
+	</style>
+	<style name="PlaylistItemDuration" parent="@android:style/TextAppearance">
+		<item name="android:textSize">10sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#333</item>
+	</style>
+	<style name="actionButton">
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/action_button_text_color</item>
+		<item name="android:textSize">11sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@drawable/action_button_background</item>
+		<item name="android:layout_marginLeft">5dip</item>
+		<item name="android:layout_marginRight">5dip</item>
+	</style>
+	<style name="NewsStorySubtext" parent="@android:style/TextAppearance">
+		<item name="android:textSize">10sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#737373</item>
+	</style>
+	<style name="StationFrequencyText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">20sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/light_blue</item>
+	</style>
+	<style name="NewsStoryIndex" parent="@android:style/TextAppearance">
+		<item name="android:textSize">12sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#737373</item>
+	</style>
+	<style name="BannerText" parent="@android:style/TextAppearance">
+		<item name="android:textSize">7sp</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textColor">#989898</item>
+		<item name="android:lineSpacingExtra">8sp</item>
+	</style>
+
+	<style name="tr_withborder">
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:clickable">true</item>
+		<item name="android:background">@drawable/tr_bg</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+	<style name="tr_withborder_alt" parent="tr_withborder">
+		<item name="android:background">@drawable/tr_alt_bg</item>
+	</style>
+	<style name="tr_withborder_sys" parent="tr_withborder">
+		<item name="android:background">@drawable/tr_sys_bg</item>
+	</style>
+	
+	<style name="chatText">
+		<item name="android:textSize">11sp</item>
+	</style>
+	<style name="stickyMessageHolder" parent="chatText">
+		<item name="android:background">#FFFFAA</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#666666</item>
+	</style>
+	<style name="chatUsername_Offline">
+		<item name="android:textSize">11sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	<style name="chatUsername_Online" parent="chatUsername_Offline">
+		<item name="android:textColor">#006600</item>
+	</style>
+	<style name="chatTime">
+		<item name="android:textSize">7sp</item>
+		<item name="android:paddingLeft">3dip</item>		
+		<item name="android:paddingRight">3dip</item>		
+	</style>
+		
+</resources>

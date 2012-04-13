@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffff</color>
+	<color name="black">#f000</color>
+	<color name="light_blue">#ff3367cd</color>
+
+	<color name="divider">#ffc8c8c8</color>
+	
+    <color name="mediaControlForeground">#F0F0F0</color>
+	<color name="appwidget_text">#FFFFFF</color>
+    <color name="notificationArtist">#434343</color>
+    <color name="notificationTitle">#000000</color>
+		
+</resources>

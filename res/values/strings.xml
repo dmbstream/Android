@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="common.ok">OK</string>
+    <string name="common.save">Save</string>
+    <string name="common.cancel">Cancel</string>
+    <string name="common.play_now">Play now</string>
+    <string name="common.play_next">Play next</string>
+    <string name="common.play_last">Play last</string>
+    <string name="common.delete">Delete</string>
+    
+    <string name="settings.title">General settings</string>
+    <string name="settings.cache_title">Music cache</string>
+    <string name="settings.cache_location">Cache location</string>
+    <string name="settings.cache_location_error">Invalid cache location. Using default.</string>
+    <string name="settings.network_title">Network</string>
+    <string name="settings.wifi_required_title">Wi-Fi streaming only</string>
+    <string name="settings.wifi_required_summary">Only stream media if connected to Wi-Fi</string>
+    <string name="settings.song_quality_wifi">Song quality - Wi-Fi</string>
+    <string name="settings.song_quality_mobile">Song quality - Mobile</string>
+    <string name="settings.song_quality_low">Low quality</string>
+    <string name="settings.song_quality_high">High quality</string>
+    <string name="settings.preload">Songs to preload</string>
+    <string name="settings.preload_1">1 song</string>
+    <string name="settings.preload_2">2 songs</string>
+    <string name="settings.preload_3">3 songs</string>
+    <string name="settings.preload_5">5 songs</string>
+    <string name="settings.preload_10">10 songs</string>
+    <string name="settings.preload_unlimited">Unlimited</string>
+    <string name="settings.cache_size">Cache size</string>
+    <string name="settings.cache_size_100">100 MB</string>
+    <string name="settings.cache_size_200">200 MB</string>
+    <string name="settings.cache_size_500">500 MB</string>
+    <string name="settings.cache_size_1000">1 GB</string>
+    <string name="settings.cache_size_2000">2 GB</string>
+    <string name="settings.cache_size_5000">5 GB</string>
+    <string name="settings.cache_size_10000">10 GB</string>
+    <string name="settings.cache_size_20000">20 GB</string>
+    <string name="settings.cache_size_unlimited">Unlimited</string>
+    <!-- <string name="settings.clear_search_history">Clear search history</string> -->
+    <!-- <string name="settings.search_history_cleared">Search history cleared</string> -->
+    <string name="settings.other_title">Other settings</string>
+    <string name="settings.scrobble_title">Scrobble to Last.fm</string>
+    <string name="settings.scrobble_summary">Send song play info to Last.fm, if ScrobbleDroid is installed.</string>
+    <string name="settings.media_button_title">Media buttons</string>
+    <string name="settings.media_button_summary">Respond to phone, headset and Bluetooth media buttons</string>
+    <string name="settings.screen_lit_title">Keep screen on</string>
+    <string name="settings.screen_lit_summary">Keeping the screen on while downloading improves download speed.</string>
+    <string name="music_service.retry">A network error occurred. Retrying %1$d of %2$d.</string>
+
+    <string name="download.empty">Playlist is empty</string>
+ 
+    <string name="select_album.no_sdcard">Error: No SD card available.</string>
+    <string name="select_album.no_network">Warning: No network available.</string>
+    	
+    <string name="widget.initial_text">Touch to select music</string>
+    <string name="widget.sdcard_busy">SD card unavailable</string>
+    <string name="widget.sdcard_missing">No SD card</string>
+
+    <string name="util.bytes_format.gigabyte">0.00 GB</string>
+    <string name="util.bytes_format.megabyte">0.00 MB</string>
+    <string name="util.bytes_format.kilobyte">0 KB</string>
+    <string name="util.bytes_format.byte">0 B</string>
+    	
+	<string name="app_name">dmbstream</string>
+	
+	<string name="playlist.clear">Clear playlist</string>
+	<string name="menu.play">Play</string>
+	<string name="menu.remove">Remove</string>
+	<string name="menu.donate">Donate</string>
+	<string name="menu.home">Home</string>
+	<string name="menu.chat">Chat</string>
+	<string name="menu.random">Random Concert</string>
+	<string name="menu.settings">Settings</string>
+	<string name="menu.logout">Logout</string>
+
+	<string name="msg_load_more_concerts">Load more concerts&#8230;</string>
+	<string name="msg_load_more_playlists">Load more playlists&#8230;</string>
+
+	<string name="msg_main_welcome_format">Welcome %1$s!</string>
+	<string name="msg_main_chat">Chat</string>
+	<string name="msg_secondary_user">(1 user)</string>
+	<string name="msg_secondary_users_formatted">(%1$s users)</string>
+
+	<string name="msg_check_connection">Check connection and try again.</string>
+
+	<string name="msg_loading">Loading&#8230;</string>
+
+	<string name="msg_concert_unknown">We were not able to find that concert.  Please try again.</string>
+	<string name="msg_concert_error">There was problem loading the concert.  Please try again.</string>
+
+	<string name="msg_latest_added_concerts_title">Latest Added Concerts</string>
+	<string name="msg_latest_performed_concerts_title">Latest Performed Concerts</string>
+	<string name="msg_your_favorites_title">Your Favorites</string>
+	<string name="msg_your_playlists_title">Your Playlists</string>
+	<string name="msg_playlist_unknown">We were not able to find that playlist.  Please try again.</string>
+	<string name="msg_playlist_error">There was problem loading the playlist.  Please try again.</string>
+		
+	<string name="msg_menu_play_now">Play only this song now</string>
+	<string name="msg_menu_play_queue">Queue only this song</string>
+	<string name="msg_menu_play_now_and_queue_remaining">Play and queue remaining</string>
+	<string name="msg_menu_play_queue_and_remaining">Queue from here</string>
+		
+	<string name="msg_listen_now">Listen now</string>
+	<string name="msg_listen_later">Queue</string>
+
+	<string name="msg_search_hint">Search</string>
+	<string name="msg_searchable_hint">Search concerts &amp; songs</string>
+
+	<string name="msg_search_title">Search</string>
+	<string name="msg_search_results_title">Search Results</string>
+
+	<string name="msg_username_error">There was a problem getting your user information.  Please try logging in again.</string>
+	<string name="msg_api_key_error">
+		To run the DMB Stream app register for an account at
+		<a href="http://dmbstream.com/api/register">dmbstream.com/api/register</a>.
+		
+		Paste the key into res/raw/api_key.txt
+	</string>
+
+</resources>

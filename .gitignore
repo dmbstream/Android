@@ -1,0 +1,5 @@
+bin
+gen
+/res/raw/api_key.txt
+/res/raw/bugsense_key.txt
+/res/values/analytics.xml

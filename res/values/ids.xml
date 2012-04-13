@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="chat_userid" />
+    <item type="id" name="chat_username" />
+    <item type="id" name="chat_menu_mention" />
+    
+    <item type="id" name="concert_id" />
+    <item type="id" name="playlist_id" />
+    <item type="id" name="concert_track" />
+    <item type="id" name="track_index" />
+    
+    <item type="id" name="menu_track_play" />
+    <item type="id" name="menu_track_queue" />
+    <item type="id" name="menu_track_play_now_and_queue_remaining" />
+    <item type="id" name="menu_track_play_queue_and_remaining" />
+</resources>
