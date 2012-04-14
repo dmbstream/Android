@@ -162,39 +162,42 @@ public abstract class RootActivity extends ActivityGroup implements
 		Calendar hourAgo = Calendar.getInstance();
 		hourAgo.add(Calendar.HOUR_OF_DAY, -1);
 		if (lastAccessed <= hourAgo.getTimeInMillis()) {
-			try {
-				Log.d(TAG, "Getting user information");
-				JSONObject user = HttpConnection.getAsJson(ApiConstants.instance().baseUrl("api/users/current"), Token);
-
-				Username = user.getString("name");
-				UserId = user.getInt("id");
-				boolean isDonor = user.getBoolean("is_donor");
-
-				Util.setUserId(this, UserId);
-				Util.setUsername(this, Username);
-				Util.setLastAccessed(this, Calendar.getInstance().getTimeInMillis());
-				Util.setIsDonor(this, isDonor);
-				if (!isDonor)
-					Util.setPreloadCount(this, 1);
-			} catch (Exception ex) {
-				Log.e(TAG, "Error getting user data: " + ex);
-				BugSenseHandler.log(TAG + "_GetUserInfo", ex);
-				if (lastAccessed < 0) {
-					final AlertDialog dialog = new AlertDialog.Builder(this)
-						.setMessage(R.string.msg_username_error)
-						.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog, int which) {
-								Util.setUserToken(RootActivity.this, null);
-								Intent intent = new Intent(RootActivity.this, LoginActivity.class);
-								startActivityWithoutAnimation(intent);
-								finish();
-							}
-								
-						}).create();
-					dialog.show();
+			if (!Util.isOffline(RootActivity.this)) {
+				try {
+					Log.d(TAG, "Getting user information");
+					JSONObject user = HttpConnection.getAsJson(ApiConstants.instance().baseUrl("api/users/current"), Token);
+	
+					Username = user.getString("name");
+					UserId = user.getInt("id");
+					boolean isDonor = user.getBoolean("is_donor");
+					lastAccessed = Calendar.getInstance().getTimeInMillis();
+	
+					Util.setUserId(this, UserId);
+					Util.setUsername(this, Username);
+					Util.setLastAccessed(this, lastAccessed);
+					Util.setIsDonor(this, isDonor);
+					if (!isDonor)
+						Util.setPreloadCount(this, 1);
+				} catch (Exception ex) {
+					Log.e(TAG, "Error getting user data: " + ex);
+					BugSenseHandler.log(TAG + "_GetUserInfo", ex);
 				}
+			}
+			if (lastAccessed < 0) {
+				final AlertDialog dialog = new AlertDialog.Builder(this)
+					.setMessage(R.string.msg_username_error)
+					.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() {
+
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							Util.setUserToken(RootActivity.this, null);
+							Intent intent = new Intent(RootActivity.this, LoginActivity.class);
+							startActivityWithoutAnimation(intent);
+							finish();
+						}
+							
+					}).create();
+				dialog.show();
 			}
 		}
 

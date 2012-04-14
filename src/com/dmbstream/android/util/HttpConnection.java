@@ -15,6 +15,7 @@ import org.apache.http.impl.auth.BasicScheme;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
 
+import com.bugsense.trace.BugSenseHandler;
 import com.dmbstream.android.helpers.ValidationHelper;
 import com.dmbstream.api.ApiConstants;
 import com.dmbstream.api.UrlWithParameters;
@@ -128,8 +129,10 @@ public class HttpConnection {
     		result = HttpConnection.get(url, username, password);
     	}catch(IOException ioe) {
     		Log.d(TAG, "Error getting results from url: " + url, ioe);
+			BugSenseHandler.log(TAG, ioe);
     	}catch(Exception e) {
     		Log.d(TAG, "Error getting results from url: " + url, e);    		
+			BugSenseHandler.log(TAG, e);
     	}finally{
         	if (Constants.IsDebug)
         		Log.d(TAG, result);
@@ -138,8 +141,9 @@ public class HttpConnection {
 		if(result != null) {
 			try {
 				return new JSONObject(result);
-			}catch(Exception E) {
-				Log.e(TAG, "Error parsing JSON: "+result, E);
+			}catch(Exception e) {
+				Log.e(TAG, "Error parsing JSON: "+result, e);
+				BugSenseHandler.log(TAG, e);
 			}
 		}
 		return null;
@@ -162,8 +166,10 @@ public class HttpConnection {
     		result = HttpConnection.post(url, userToken, new ByteArrayEntity(content.toString().getBytes(Encoding.UTF_8.name())));
     	}catch(IOException ioe) {
     		Log.d(TAG, "Error getting results from url: " + url, ioe);
+			BugSenseHandler.log(TAG, ioe);
     	}catch(Exception e) {
-    		Log.d(TAG, "Error getting results from url: " + url, e);    		
+    		Log.d(TAG, "Error getting results from url: " + url, e);
+			BugSenseHandler.log(TAG, e);
     	}finally{
         	if (Constants.IsDebug)
         		Log.d(TAG, result);
@@ -172,8 +178,9 @@ public class HttpConnection {
 		if(result != null) {
 			try {
 				return new JSONObject(result);
-			}catch(Exception E) {
-				Log.e(TAG, "Error parsing JSON: "+result, E);
+			}catch(Exception e) {
+				Log.e(TAG, "Error parsing JSON: "+result, e);
+				BugSenseHandler.log(TAG, e);
 			}
 		}
 		return null;

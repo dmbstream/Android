@@ -29,11 +29,9 @@ import com.dmbstream.api.Track;
 public class CachedMusicService implements IMusicService {
 
     private static final int MUSIC_DIR_CACHE_SIZE = 20;
-    private static final int TTL_MUSIC_DIR = 5 * 60; // Five minutes
 
     private final IMusicService musicService;
     private final LRUCache<String, TimeLimitedCache<Track>> cachedMusicDirectories;
-    private String restUrl;
 
     public CachedMusicService(IMusicService musicService) {
         this.musicService = musicService;
